@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <div class="login-container">
+      <h1>Tag Game</h1>
+      <div class="images-container">
+        <div class="image-placeholder">Image 1</div>
+        <div class="image-placeholder">Image 2</div>
+        <div class="image-placeholder">Image 3</div>
+      </div>
+      <input type="text" id="name-input" placeholder="Enter your name">
+      <button id="start-button">Play</button>
+    </div>
+  </div>
+  <div id="game-screen">
+    <div id="scoreboard" class="scoreboard"></div>
+    <canvas id="game-canvas"></canvas>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
